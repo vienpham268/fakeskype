@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+
+export interface AddChatImplementationProps {
+  isOpen: boolean;
+}
 
 function mapStateToProps(state) {
-    return {
-
-    };
+  return {};
 }
 
 function mapDispatchToProps(dispatch) {
-    return {
-
-    };
+  return {};
 }
 
-class AddChat extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+export class AddChatImplementation extends Component {
+  render() {
+    return <div></div>;
+  }
 }
 
-export default connect(
-    mapStateToProps,
-)(AddChat);
+export const AddChat = connect(mapStateToProps)(AddChatImplementation);

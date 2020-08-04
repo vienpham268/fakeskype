@@ -4,9 +4,11 @@ import Chat from "../Chat/Chat";
 import Setting from "../Setting/Setting";
 import AddChat from "../AddChat/AddChat";
 import AddGroup from "../AddGroup/AddGroup";
+import UserInfo from "../UserInfo/UserInfo";
 
 export interface AppContainerProps {
   history: any;
+ 
 }
 
 class AppContainer extends React.Component<AppContainerProps> {
@@ -19,6 +21,7 @@ class AppContainer extends React.Component<AppContainerProps> {
         <Setting />
         <AddChat />
         <AddGroup />
+        <UserInfo />
       </div>
     );
   }

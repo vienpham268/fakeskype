@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-export interface ChatProps {}
+export interface UserInfoProps {}
 
 function mapStateToProps(state) {
   return {};
@@ -11,10 +11,10 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-class ChatImplementation extends Component {
+export class UserInfoImplementation extends Component {
   render() {
     return <div></div>;
   }
 }
 
-export const Chat = connect(mapStateToProps)(ChatImplementation);
+export const UserInfo = connect(mapStateToProps)(UserInfoImplementation);
