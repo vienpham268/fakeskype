@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import * as React from "react";
 import { connect } from "react-redux";
 
-export interface AddChatImplementationProps {
-  isOpen: boolean;
+export interface AddChatProps {
+  isOpen?: boolean;
 }
 
 function mapStateToProps(state) {
@@ -13,7 +13,7 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-export class AddChatImplementation extends Component {
+export class AddChatImplementation extends React.Component<AddChatProps> {
   render() {
     return <div></div>;
   }

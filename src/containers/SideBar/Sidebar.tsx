@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import * as React from "react";
 import { connect } from "react-redux";
 
 export interface SideBarProps {
-  selectChatNav: () => void;
-  selectContactNav: () => void;
-  selectNotificationNav: () => void;
+  selectChatNav?: () => void;
+  selectContactNav?: () => void;
+  selectNotificationNav?: () => void;
 }
 
 function mapStateToProps(state) {
@@ -15,9 +15,9 @@ function mapDispatchToProps(dispatch: Function) {
   return {};
 }
 
-export class SideBarImplementation extends Component {
+export class SideBarImplementation extends React.Component<SideBarProps> {
   render() {
-    return <div></div>;
+    return <div className="Sidebar-Container"></div>;
   }
 }
 

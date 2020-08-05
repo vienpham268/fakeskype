@@ -1,28 +1,20 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import * as React from "react";
+import { connect } from "react-redux";
+
+export interface AddGroupProps {}
 
 function mapStateToProps(state) {
-    return {
-
-    };
+  return {};
 }
 
 function mapDispatchToProps(dispatch) {
-    return {
-
-    };
+  return {};
 }
 
-class AddGroup extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+class AddGroupImplementation extends React.Component<AddGroupProps> {
+  render() {
+    return <div></div>;
+  }
 }
 
-export default connect(
-    mapStateToProps,
-)(AddGroup);
+export const AddGroup = connect(mapStateToProps, mapDispatchToProps)(AddGroupImplementation);

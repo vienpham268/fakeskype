@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import * as React from 'react';
 import { connect } from "react-redux";
 
 export interface ChatProps {}
@@ -11,7 +11,7 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-class ChatImplementation extends Component {
+class ChatImplementation extends React.Component<ChatProps> {
   render() {
     return <div></div>;
   }

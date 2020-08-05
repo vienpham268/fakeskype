@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import * as React from "react";
 import { connect } from "react-redux";
 
 export interface SettingImplementationProps {
-  isOpen: boolean;
+  isOpen?: boolean;
 }
 
 function mapStateToProps(state) {
@@ -13,13 +13,15 @@ function mapDispatchToProps(dispatch: Function) {
   return {};
 }
 
-class SettingImplementation extends Component {
+class SettingImplementation extends React.Component<
+  SettingImplementationProps
+> {
   render() {
     return <div></div>;
   }
 }
 
-export default connect(
+export const Setting = connect(
   mapStateToProps,
   mapDispatchToProps
 )(SettingImplementation);
