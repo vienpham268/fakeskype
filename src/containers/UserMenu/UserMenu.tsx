@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 
-export interface ManageUserProps {}
+export interface UserMenuProps {}
 
 function mapStateToProps(state) {
   return {};
@@ -11,10 +11,10 @@ function mapDispatchToProps(dispatch: Function) {
   return {};
 }
 
-export class ManageUserImplementation extends React.Component<ManageUserProps> {
+export class UserMenuImplementation extends React.Component<UserMenuProps> {
   render() {
     return <div></div>;
   }
 }
 
-export const ManageUser = connect(mapStateToProps)(ManageUserImplementation);
+export const UserMenu = connect(mapStateToProps)(UserMenuImplementation);

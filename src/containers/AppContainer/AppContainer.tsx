@@ -6,7 +6,7 @@ import {
   Setting,
   AddChat,
   AddGroup,
-  ManageUser,
+  UserMenu,
 } from "../../containers";
 
 export interface AppContainerProps {
@@ -30,7 +30,7 @@ class AppContainerImplementation extends React.Component<AppContainerProps> {
         <Setting />
         <AddChat />
         <AddGroup />
-        <ManageUser />
+        <UserMenu />
       </div>
     );
   }

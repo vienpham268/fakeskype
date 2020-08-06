@@ -4,4 +4,4 @@ export * from "./AppContainer";
 export * from "./Chat";
 export * from "./Setting";
 export * from "./SideBar";
-export * from "./UserInfo";
+export * from "./UserMenu";
