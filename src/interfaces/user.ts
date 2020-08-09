@@ -1,11 +1,11 @@
 import { Status } from "../enums/statusEnum";
 
-export interface User {
+export interface UserInterface {
   name: String;
-  email: String;
-  mood: String;
-  isUser: boolean;
+  email?: String;
+  mood?: String;
+  isAccount: boolean;
   isFriend: boolean;
-  avatar: any;
+  avatar?: any;
   status: Status;
 }
