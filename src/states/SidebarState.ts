@@ -3,18 +3,15 @@ import { StatusEnum } from "../enums/statusEnum";
 import { NavBarEnum } from "../enums/navBarEnum";
 
 export interface SidebarState {
-  account: UserInterface;
-  tabSelected: NavBarEnum;
-  favoritesList?: String[];
-  chatList?: String[];
+  userSignIn: UserInterface;
+
 }
 
 export const sidebarState: SidebarState = {
-  account: {
+  userSignIn: {
     name: "Tri Vien Pham",
     isAccount: true,
     isFriend: false,
     status: StatusEnum.ACTIVE,
   },
-  tabSelected: NavBarEnum.CHAT,
 };

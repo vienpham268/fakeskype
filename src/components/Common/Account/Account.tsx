@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 
-export interface UserInfoImplementationProps {
+export interface AccountImplementationProps {
   openUserMenu: () => void;
   openThreeDots: () => void;
 }
@@ -14,15 +14,15 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-class UserInfoImplementation extends React.Component<
-  UserInfoImplementationProps
+class AccountImplementation extends React.Component<
+  AccountImplementationProps
 > {
   render() {
     return <div></div>;
   }
 }
 
-export default connect(
+export const Account = connect(
   mapStateToProps,
   mapDispatchToProps
-)(UserInfoImplementation);
+)(AccountImplementation);
