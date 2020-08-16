@@ -5,7 +5,7 @@ import createSagaMiddle from "redux-saga";
 import createHistory from "history/createHashHistory";
 import { routerMiddleware } from "react-router-redux";
 import { LocalizeProvider } from "react-localize-redux";
-import { AppContainer } from "./containers/AppContainer/AppContainer";
+import AppContainer from "./containers/App/AppContainer";
 import rootReducer from "./reducers";
 import rootSaga from "./sagas";
 export const App = () => {

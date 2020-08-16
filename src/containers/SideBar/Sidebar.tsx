@@ -1,6 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { SidebarState } from "../../states/SidebarState";
+import { SidebarState } from "../../states/sidebarState";
+import SideBarHead from "../../components/Sidebar/Head/SidebarHead";
 
 export interface SideBarProps {
   openChatNav?: () => void;
@@ -9,7 +10,7 @@ export interface SideBarProps {
 }
 
 const mapStateToProps = ({
-  userSignIn: { name, mood, status, avatar },
+  user: { name, mood, status, avatar },
 }: SidebarState) => ({
   name,
   mood,
@@ -20,7 +21,11 @@ const mapStateToProps = ({
 const mapDispatchToProps = (dispatch: Function) => {};
 export class SideBarImplementation extends React.Component<SideBarProps> {
   render() {
-    return <div className="Sidebar-Container"></div>;
+    return (
+      <div className="sidebar">
+        <SideBarHead />
+      </div>
+    );
   }
 }
 

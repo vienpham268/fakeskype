@@ -1,4 +1,4 @@
-import { Status } from "../enums/statusEnum";
+import { StatusEnum } from "../enums/statusEnum";
 
 export interface UserInterface {
   name: String;
@@ -7,5 +7,5 @@ export interface UserInterface {
   isAccount: boolean;
   isFriend: boolean;
   avatar?: any;
-  status: Status;
+  status: StatusEnum;
 }

@@ -1,4 +1,4 @@
-export interface MessageState {
+export interface MessageInterface {
   message: String;
   timeArrived: any;
   emoj: any;
